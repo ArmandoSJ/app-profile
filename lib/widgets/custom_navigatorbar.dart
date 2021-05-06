@@ -19,25 +19,26 @@ class CustomNavigationBar extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon( Icons.map , size: 20.0),
-          label: 'Feed'
+          icon: Icon( Icons.account_circle ),
+          label: 'Profile'
         ),
         BottomNavigationBarItem(
-          icon: Icon( Icons.compass_calibration, size: 20.0),
+          icon: Icon( Icons.search , size: 20.0),
+          label: 'Search'
+        ),
+        BottomNavigationBarItem(
+          icon: Icon( Icons.people, size: 20.0),
           label: 'Friends'
         ),
         BottomNavigationBarItem(
-          icon: Icon( Icons.verified_user , size: 20.0),
+          icon: Icon( Icons.message , size: 20.0),
           label: 'Messages'
         ),
         BottomNavigationBarItem(
-          icon: Icon( Icons.compass_calibration ),
+          icon: Icon( Icons.settings ),
           label: 'Settings'
         ), 
-        BottomNavigationBarItem(
-          icon: Icon( Icons.verified_user ),
-          label: 'Profile'
-        ),
+        
         
       ],
     );
