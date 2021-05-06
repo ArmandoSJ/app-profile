@@ -32,10 +32,10 @@ class MyApp extends StatelessWidget {
           initialRoute: 'home', 
           routes: getApplicationRoutes(),
           theme: ThemeData(
-            primaryColor: Colors.blue,
+            primaryColor: Colors.black,
             floatingActionButtonTheme: FloatingActionButtonThemeData(
-            backgroundColor: Colors.deepPurple
-          )
+            backgroundColor: Colors.blue
+            )
           ),  
      ),
     );

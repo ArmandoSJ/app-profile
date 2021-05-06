@@ -16,27 +16,29 @@ class CustomNavigationBar extends StatelessWidget {
       onTap: ( int i ) => uiProvider.selectedMenuOpt = i,
       currentIndex: currentIndex,
       elevation: 0,
+      type: BottomNavigationBarType.fixed,
       items: <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon( Icons.map ),
+          icon: Icon( Icons.map , size: 20.0),
           label: 'Feed'
         ),
         BottomNavigationBarItem(
-          icon: Icon( Icons.compass_calibration ),
+          icon: Icon( Icons.compass_calibration, size: 20.0),
           label: 'Friends'
         ),
         BottomNavigationBarItem(
-          icon: Icon( Icons.compass_calibration ),
+          icon: Icon( Icons.verified_user , size: 20.0),
           label: 'Messages'
         ),
         BottomNavigationBarItem(
           icon: Icon( Icons.compass_calibration ),
           label: 'Settings'
-        ),
+        ), 
         BottomNavigationBarItem(
           icon: Icon( Icons.verified_user ),
           label: 'Profile'
         ),
+        
       ],
     );
   }
