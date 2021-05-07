@@ -44,8 +44,8 @@ class UiBackGround extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Image(
-                    image: AssetImage("assets/UserIcon.png"),
-                    height: 120.0,
+                    image: AssetImage("assets/logoapp.png"),
+                    height: 80.0,
                   ),
                   SizedBox(height: 10.0, width: double.infinity)
                 ],
@@ -71,13 +71,13 @@ class ContainerUI extends StatelessWidget {
               children: <Widget>[
                  SafeArea(
                   child: Container(
-                      height: 120.0
-                      ),
+                      height: 100.0
+                  ),
                 ),
-                SizedBox(height: 30.0),
                 Text('Iniciar Sesión', style: TextStyle(fontSize: 20.0, color: Colors.black)),
                 SizedBox(height: 10.0),
-                FormUI()
+                FormUI(),
+                FooterUI()
               ],
             ),
           ),
@@ -86,8 +86,16 @@ class ContainerUI extends StatelessWidget {
   }
 }
 
-
 class FormUI extends StatelessWidget {
+  
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
+class FooterUI extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
@@ -108,21 +116,5 @@ class FormUI extends StatelessWidget {
       ]                      
     );
     
-    
-    
-    
-/*     RaisedButton(
-          child: Container(
-            padding: EdgeInsets.symmetric( horizontal: 100.0, vertical: 18.0),
-            child: Text('Ingresar'),
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0)
-          ),
-          elevation: 0.0,
-          color: Colors.blue.shade900,
-          textColor: Colors.white,
-          onPressed:  ( _guardando ) ? null : _login,
-    ); */
   }
 }

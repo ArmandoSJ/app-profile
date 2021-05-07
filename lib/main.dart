@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             const Locale('en', 'US'), // English
             const Locale('es', 'ES'), // Spanish
           ],
-          initialRoute: 'home', 
+          initialRoute: 'main', 
           routes: getApplicationRoutes(),
           theme: ThemeData(
             primaryColor: Colors.black,
