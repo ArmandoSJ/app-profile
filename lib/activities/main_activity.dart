@@ -23,10 +23,6 @@ class MainActivity extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
             ),
             SizedBox(height: size.height * 0.20),
-            /* Image.asset(
-              "assets/logoapp.png",
-              height: size.height * 0.20,
-            ), */
             SizedBox(height: size.height * 0.05),
             ButtonUI(
               text: "Inicio de sesion",
